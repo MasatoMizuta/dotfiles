@@ -1,0 +1,21 @@
+[user]
+    name = Masato Mizuta
+    email = mst.mizuta@gmail.com
+
+[core]
+    autocrlf = false
+    longpaths = true
+    excludesfile = ~/.gitignore_global
+    preloadindex = true
+
+[color]
+    ui = auto
+
+[alias]
+    st = status
+    cm = commit
+    co = checkout
+    br = branch
+    gr = log --graph --date=short --decorate=short --pretty=\"format:%C(bold green)%h %Creset%cd %C(yellow)%cn %C(bold red)%d %Creset%s\" --all
+    difc = diff --cached
+    nffmerge = merge --no-ff
