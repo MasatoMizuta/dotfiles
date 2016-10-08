@@ -9,6 +9,6 @@ $ sh install.sh
 ```
 
 ## References
-https://github.com/mathiasbynens/dotfiles
-http://baqamore.hatenablog.com/entry/2013/09/03/013013
-http://ottan.xyz/system-preferences-terminal-defaults-mission-control-4656/
+- https://github.com/mathiasbynens/dotfiles
+- http://baqamore.hatenablog.com/entry/2013/09/03/013013
+- http://ottan.xyz/system-preferences-terminal-defaults-mission-control-4656/
