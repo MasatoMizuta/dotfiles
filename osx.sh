@@ -91,3 +91,11 @@ defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 # Don't write .DS_Store on Network and USB drive
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+
+###############################################################################
+# iTerm2                                                                      #
+###############################################################################
+
+# Use the cutom plist
+defaults write com.googlecode.iterm2 "PrefsCustomFolder" -string "~/.iterm2"
+defaults write com.googlecode.iterm2 "LoadPrefsFromCustomFolder" -bool true
