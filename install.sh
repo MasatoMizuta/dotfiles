@@ -4,6 +4,7 @@
 source brew.sh
 source zsh.sh
 source osx.sh
+source atom.sh
 
 # Deploy dotfiles
 for f in .??*
