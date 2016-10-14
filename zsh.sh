@@ -11,3 +11,11 @@ ZSH_SYNTAX=$ZSH/custom/plugins/zsh-syntax-highlighting
 if [ ! -e $ZSH_SYNTAX ]; then
     git clone git://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_SYNTAX
 fi
+
+# Change login shell to zsh
+ZSH_PATH=/usr/local/bin/zsh
+if [ $SHELL != $ZSH_PATH ]; then
+    echo 'Change login shell to zsh'
+    grep -q $ZSH_PATH /etc/shells || echo $ZSH_PATH | sudo tee -a /etc/shells
+    chsh -s /usr/local/bin/zsh
+fi
