@@ -51,6 +51,9 @@ defaults write com.apple.AppleMultitouchTrackpad ForceSuppressed -bool true
 # Set Dock size
 defaults write com.apple.dock tilesize -int 40
 
+# Disable automatic rearrange spaces
+defaults write com.apple.dock mru-spaces -bool false
+
 ###############################################################################
 # Finder                                                                      #
 ###############################################################################
