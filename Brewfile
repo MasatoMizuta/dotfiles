@@ -23,5 +23,11 @@ cask 'virtualbox'
 cask 'docker'
 cask 'adobe-reader'
 cask 'amazon-drive'
+cask 'qlstephen'
+cask 'qlmarkdown'
+cask 'qlcolorcode'
+cask 'qlimagesize'
+cask 'quicklook-json'
+cask 'quicklook-csv'
 mas 'Quick Calendar', id: 1004514425
 mas 'Calca', id: 635758264
