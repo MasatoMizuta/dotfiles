@@ -12,7 +12,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx zsh-syntax-highlighting vagrant npm pod redis-cli)
+plugins=(git osx zsh-syntax-highlighting docker kubectl vagrant npm pod redis-cli)
 
 source $ZSH/oh-my-zsh.sh
 
