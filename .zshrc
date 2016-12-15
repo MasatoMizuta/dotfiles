@@ -22,7 +22,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Set PATH
 export PATH="$HOME/.nodebrew/current/bin:$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin"
-export GOPATH=$HOME/.go
+export GOPATH=$HOME/go
 
 # Peco
 function peco-select-history() {
