@@ -46,3 +46,6 @@ alias localdocker='eval $(minikube docker-env -u)'
 
 # ZSH option
 setopt hist_ignore_all_dups
+
+# Google Cloud SDK completion
+source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
