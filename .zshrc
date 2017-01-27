@@ -39,3 +39,7 @@ function peco-select-history() {
 }
 zle -N peco-select-history
 bindkey '^r' peco-select-history
+
+# Alias
+alias kubedocker='eval $(minikube docker-env)'
+alias localdocker='eval $(minikube docker-env -u)'
