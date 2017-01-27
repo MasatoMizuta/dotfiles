@@ -12,7 +12,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx zsh-syntax-highlighting docker kubectl vagrant npm pod redis-cli)
+plugins=(git osx zsh-syntax-highlighting docker kubectl vagrant npm pod redis-cli golang)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -21,8 +21,8 @@ source $ZSH/oh-my-zsh.sh
 ###############################################################################
 
 # Set PATH
-export PATH="$HOME/.nodebrew/current/bin:$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin"
 export GOPATH=$HOME/go
+export PATH="$GOPATH/bin:$PATH"
 
 # Peco
 function peco-select-history() {
@@ -36,7 +36,6 @@ function peco-select-history() {
         eval $tac | \
         peco --query "$LBUFFER")
     CURSOR=$#BUFFER
-    zle clear-screen
 }
 zle -N peco-select-history
 bindkey '^r' peco-select-history
