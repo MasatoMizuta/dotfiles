@@ -43,3 +43,6 @@ bindkey '^r' peco-select-history
 # Alias
 alias kubedocker='eval $(minikube docker-env)'
 alias localdocker='eval $(minikube docker-env -u)'
+
+# ZSH option
+setopt hist_ignore_all_dups
