@@ -22,7 +22,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Set PATH
 export GOPATH=$HOME/go
-export PATH="$GOPATH/bin:$PATH"
+export PATH="$GOPATH/bin:/usr/local/sbin/:$PATH"
 
 # Peco
 function peco-select-history() {
