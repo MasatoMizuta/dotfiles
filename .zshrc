@@ -22,7 +22,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Set PATH
 export GOPATH=$HOME/go
-export PATH="$GOPATH/bin:/usr/local/sbin/:$PATH"
+export PATH="$GOPATH/bin:/usr/local/sbin:$PATH"
 
 # Peco
 function peco-select-history() {
@@ -41,10 +41,11 @@ zle -N peco-select-history
 bindkey '^r' peco-select-history
 
 # Alias
-alias kubedocker='eval $(minikube docker-env)'
-alias localdocker='eval $(minikube docker-env -u)'
+alias docker-for-minikube='eval $(minikube docker-env)'
+alias docker-for-local='eval $(minikube docker-env -u)'
 
 # ZSH option
+unsetopt auto_cd
 setopt hist_ignore_all_dups
 
 # Google Cloud SDK completion
